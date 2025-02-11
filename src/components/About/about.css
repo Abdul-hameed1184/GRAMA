@@ -1,0 +1,95 @@
+.about {
+  position: relative;
+  .countdown{
+    height: 11.5rem;
+    background-color: rgb(215, 215, 215, 0.2);
+    backdrop-filter: blur(1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 7rem; */
+    top: -4rem;
+    left: 10vw;
+    width: 80vw;
+    border-radius: 8px;
+    position: absolute;
+    p{
+      font-size: 2rem;
+      color:  ;
+      font-weight: 600;
+    }
+  }
+  background-color: #FCFDF3;
+  font-family: "Filson Pro", sans-serif;
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20rem; */
+    justify-content: space-between;
+    padding: 12rem 12rem;
+    .left {
+        width: 40rem;
+        
+      h1{
+        font-family: "Filson Pro", sans-serif;
+        font-size: 4rem;
+        font-weight: 700;
+        color: #002a59;
+      }
+      p{
+        font-size: 2rem;
+        color: #002a59;
+        margin-top: 4rem;
+      }
+      button{
+        height: 4rem;
+        width: 13rem;
+        margin-top: 2rem;
+        border-radius: 7px;
+        margin-left: 1rem;
+        border: none ;
+        font-size: 1.3rem;
+        background-color: #FCD227;
+
+      }
+    }
+    .right{
+        img{
+            height: 35rem;
+        }
+    }
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .about{
+    .grid{
+      padding: 12rem 0;
+      margin: auto;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .about{
+    .grid{
+      margin: auto;
+      justify-content: center;
+      gap: 3rem;
+      padding: 9rem 2rem;
+      .left{
+        h1{
+          font-size: 2.5rem;
+        }
+        p{
+          font-size: 1.2rem;
+        }
+      }
+      .right{
+        img{
+          height: 20rem;
+        }
+      }
+    }
+  }
+
+}

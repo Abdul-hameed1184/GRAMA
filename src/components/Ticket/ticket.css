@@ -1,0 +1,48 @@
+.ticket{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    text-align: center;
+    background-color: #002a59;
+    h1{
+        font-size: 3rem;
+        color: #FCD227;
+    }
+    button{
+        border: 2px #FCD227 solid;
+        border-radius: 2rem;
+        color: #FCD227;
+        height: 4rem;
+        background-color: #002a59;
+        width: 17rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+    }
+
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .ticket{
+
+        img{
+            height: 30rem;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .ticket{
+        img{
+            height: 15rem;
+        }
+        button{
+            height: 3rem;
+            font-size: 1.2rem;
+            width: 12rem;
+        }
+        h1{
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+.footer{
+    background-color: #002a59;
+    padding: 3rem 5rem;
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    /* align-items: center; */
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        .sponsor{
+            width: 30%;
+            h1{
+                font-size: 2.5rem;
+                color: #fcd227;
+            }
+            p{
+                font-size: 1.7rem;
+                /* font-weight: 600; */
+                color: white;
+                margin-top: 2rem;
+            }
+            button{
+                width: 15rem;
+                height: 3.7rem;
+                border: none;
+                background-color: #BBDFFF;
+                border-radius:8px;
+                margin-top: 2rem;
+                font-size: 20px;
+                margin-bottom: 4rem;
+            }
+        }
+        .route{
+            color: white;
+            line-height: 3rem;
+            font-size: 20px;
+            margin: auto;
+            li{
+                cursor: pointer;
+            }
+        }
+        .newsletter{
+           h1{
+                font-size: 2.5rem;
+                color: #fcd227;
+            }
+            p{
+                font-size: 20px;
+                color: white;
+                margin: 2rem 0;
+            }
+            form{
+                display: flex;
+                align-items: center;
+                input{
+                    height: 3.3rem;
+                    width: 22.5rem;
+                    font-size: 16px;
+                    padding-left: 1rem;
+                    border-radius: 8px;
+                    outline: none;
+                    border: none;
+                    color: #002a59;
+                }
+                input::placeholder{
+                    color: black;
+                }
+                button{
+                    height: 3rem;
+                    width: 3rem;
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    margin-left: 0.5rem;
+                    border: none;
+                    background-color: #fcd227;
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 3rem;
+        margin: 2rem 0;
+        p{
+            font-size: 13px;
+            font-weight: 100;
+            span{
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+        .right{
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 15px;
+        }
+        }
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .footer{
+        .flex{
+            margin-top: 3rem;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            .sponsor{
+                width: 80%;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .route{
+margin-bottom: 2rem;
+            }
+            .newsletter{
+                margin: auto;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .footer{
+        padding: 1rem 2rem;
+        .flex{
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            gap: 1rem;
+            .sponsor{
+                width: 100%;
+                h1{
+                    font-size: 2rem;
+
+                }
+                p{
+                    font-size: 1rem;
+                    line-height: 1.7rem;
+                }
+                button{
+                    height: 3.5rem;
+                    width: 12rem;
+                    font-size: 1rem;
+                }
+            }
+            .route{
+                text-align: start;
+            }
+            .newsletter{
+                text-align: start;
+                margin-bottom: 2rem;
+                h1{
+                    font-size: 1.5rem;
+
+                }
+                p{
+                    margin: 1rem 0; 
+                }
+
+            }
+        }
+    }
+}
