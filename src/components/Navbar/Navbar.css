@@ -65,18 +65,19 @@ nav{
     transform: translateY(100vh);
         transition: all ease-in-out .7s;
 }
+
   .hidden {
     position: absolute;
-    transform: translateY(-100vh);
-    transition: all ease-in-out .7s;
-    top: 0;
+
+    top: -100vh;
     left: 0;
     flex-direction: column;
     background-color: aliceblue;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 0;
     .nav-links {
       flex-direction: column;
+      
     }
     button {
       border: none;
